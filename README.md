@@ -7,9 +7,9 @@ OpenRC Script for dictd
 
 ### Non Arch Linux Based
 1. Clone this repo
-2. Install the file **dictd** in */etc/init.d/* with
+2. Install the file **dictd.init** in */etc/init.d/* with
 ```bash
-install -m=755 -oroot backlight /etc/init.d/dictd
+install -m=755 -oroot dictd.init /etc/init.d/dictd
 ```
 
 # Setup
@@ -28,9 +28,9 @@ pacman -Rs dictd-openrc
 ### Non Arch Linux Based
 1. First remove it from the system startup
 ```bash
-rc-update del backlight -a
+rc-update del dictd -a
 ```
 2. Then just delete the script from your system
 ```bash
- rm /etc/init.d/backlight
+ rm /etc/init.d/dictd
 ```
